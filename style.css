@@ -1,0 +1,117 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #009688),
+    url(images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.menuBar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 6%;
+  padding-right: 3%;
+}
+
+.logo img {
+  width: 140px;
+}
+.menuIcon {
+  z-index: 2;
+}
+.menuIcon img {
+  width: 25px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.heroText {
+  position: absolute;
+  user-select: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heroText h1 {
+  color: aliceblue;
+  font-family: Verdana, sans-serif;
+  font-size: 70px;
+  text-align: center;
+}
+
+.heroText p {
+  font-size: 20px;
+  padding-top: 10px;
+  color: aliceblue;
+  font-style: italic;
+  text-align: center;
+}
+
+.btns {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.heroText a {
+  margin-left: 20px;
+}
+
+.heroText a button {
+  width: 120px;
+  height: 40px;
+  background: transparent;
+  color: aliceblue;
+  border: 1px solid white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition: color 0.6s;
+}
+.heroText a button span {
+  width: 0%;
+  height: 100%;
+  background: beige;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.heroText a button:hover span {
+  width: 100%;
+}
+
+.heroText a button:hover {
+  color: black;
+}
+
+.navigation {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #009688;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.navigation ul li {
+  list-style: none;
+  margin: 30px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+}
