@@ -1,9 +1,9 @@
 let navIcon = document.getElementById ("navIcon");
 let navDrawer = document.getElementById ("navDrawer");
 
+navIcon.addEventListener("click", menu) 
 
-
-navIcon.onclick= function () {
+function menu() {
     if (navDrawer.style.opacity=== "" || navDrawer.style.opacity === "0") {
         navDrawer.style.opacity = "1";
        navIcon.src = "images/close.png"
