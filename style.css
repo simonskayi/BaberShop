@@ -19,6 +19,7 @@
   padding-top: 40px;
   padding-left: 6%;
   padding-right: 3%;
+  position: relative;
 }
 
 .logo img {
@@ -26,11 +27,17 @@
 }
 .menuIcon {
   z-index: 2;
+  position: fixed;
+  right: 3%;
+  width: auto;
+  height: auto;
+ 
 }
 .menuIcon img {
   width: 25px;
   background-size: contain;
   cursor: pointer;
+  
 }
 
 .heroText {
@@ -62,7 +69,8 @@
 }
 
 .heroText a {
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   
 
 }
@@ -119,4 +127,56 @@
   text-decoration: none;
   font-size: 20px;
   color: aliceblue;
+}
+
+.features{
+  width: 100%;
+  height: 100vh;
+  background-color: gainsboro;
+   
+
+.features-header{
+  text-align: center;
+  padding-top: 40px;
+}
+.features-header p{
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #009688;
+  font-weight: bold;
+}
+}
+
+.features-header h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+}
+
+.feature-article{
+display: flex;
+justify-content: center;
+padding-top: 30px;
+margin-right: 15%;
+margin-left: 7%;
+}
+
+.barber-man img{
+  width: 300px;
+  border-radius: 10px;
+}
+
+.feature-message{
+  padding: 15px;
+  margin: 20px;
+}
+.feature-message h3{
+  font-family:  sans-serif;
+  color: #009688;
+}
+
+.feature-message p{
+  color: blueviolet;
+  margin-right: 10%;
+  font-family: 'Poppins', sans-serif;
+
 }
